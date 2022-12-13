@@ -1,0 +1,21 @@
+<div class="container">
+    <table class="table border rounded mt-5">
+        <thead style="background-color:#6e7adc">
+          <tr>
+            <th scope="col">ID</th>
+            <th scope="col">Nome</th>
+            <th scope="col">Username</th>
+            <th scope="col">Email</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr *ngFor="let user of users">
+            <th scope="row">{{user.id}}</th>
+            <td>{{user.name}}</td>
+            <td>{{user.username}}</td>
+            <td>{{user.email}}</td>
+          </tr>
+        </tbody>
+      </table>
+</div>
+

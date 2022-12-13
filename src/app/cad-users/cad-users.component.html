@@ -1,0 +1,54 @@
+<div class="container">
+    <div class="col-10 mx-auto">
+        <div class="container border">
+            <h1 class="py-2">Cadastro usuario</h1>
+            <div class="mb-3">
+                <label class="form-label">Nome</label>
+                <input class="form-control" type="text" #userName>
+            </div>
+            <div class="mb-3">
+                <label class="form-label">Username</label>
+                <input class="form-control" type="text" #userUsername>
+            </div>
+            <div class="mb-3">
+                <label class="form-label">E-mail</label>
+                <input type="email" class="form-control" placeholder="name@example.com" #userEmail>
+            </div>
+            <div class="mb-3">
+                <label class="form-label">Rua</label>
+                <input type="text" class="form-control" #userRua>
+            </div>
+            <div class="mb-3">
+                <div class="row">
+                    <div class="col-6">
+                        <label class="form-label">Cidade</label>
+                        <input type="text" class="form-control" #userCidade>
+                    </div>
+                    <div class="col-3">
+                        <label class="form-label">Numero</label>
+                        <input type="text" class="form-control" #userNumero>
+                    </div>
+                    <div class="col-3">
+                        <label class="form-label">CEP</label>
+                        <input type="text" class="form-control" #userCEP>
+                    </div>
+                </div>
+            </div>
+            <div class="mb-3">
+                <div class="row">
+                    <div class="col">
+                        <label class="form-label">Longitude</label>
+                        <input type="text" class="form-control" #userLng>
+                    </div>
+                    <div class="col">
+                        <label class="form-label">Latitude</label>
+                        <input type="text" class="form-control" #userLtd>
+                    </div>
+                </div>
+            </div>
+            <div class="d-grid gap-2 d-md-flex justify-content-md-end">
+                <button class="btn btn-primary" type="submit" (click)="add(userName.value, userUsername.value,userEmail.value, userRua.value, userNumero.value, userCidade.value, userCEP.value, userLng.value, userLtd.value); userName.value = '';userUsername.value = '';userEmail.value = '';userRua.value = '';userNumero.value = '';userCidade.value = '';userCEP.value = '';userLng.value = '';userLtd.value = ''">Salvar</button>
+              </div>
+        </div>
+    </div>
+</div>
